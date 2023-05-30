@@ -1,0 +1,15 @@
+<form action="http://localhost:3333/post" method="post">
+    <input placeholder="request" type="text" name="req" class="con">
+    <textarea content="" className="area" name="area"></textarea>
+    <button class="btn" onclick="alert(1)"></button>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+    $('.btn').on('click', function (e) {
+        e.preventDefault()
+        let con = $('.con').val()
+        console.log(con)
+
+
+    })
+</script>
